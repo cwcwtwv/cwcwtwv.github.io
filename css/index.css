@@ -1,4 +1,28 @@
-.content{
+#float-button {
+  background: #999;
+  text-align: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 15px;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+#float-window {
+  background: #999;
+  text-align: center;
+  height: 90px;
+  width: 180px;
+  border-radius: 15px;
+  position: fixed;
+  display: block;
+  top: 90px;
+  left: 0;
+}
+
+.content {
   font-size: 100%;
   margin: 0 auto 0 auto;
   padding: 0;
