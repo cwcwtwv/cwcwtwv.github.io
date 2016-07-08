@@ -16,6 +16,7 @@ function init() {
 	for (var i = 0; i < msgNum; i++) {
 		document.getElementById("img"+i).src = "../../image/loading.gif";
 	}
+	document.getElementById("imga").src = "../../image/loading.gif";
 }
 
 var xhr = new XMLHttpRequest();
@@ -41,14 +42,10 @@ xhr.onreadystatechange = function(event) {
 			messages = eval(xhr.responseText);
 			document.getElementById("fa").style.display = "none";
 			for (var i = 0; i < msgNum; i++) {
-				//messages[i] = tempObj[i];
 				document.getElementsByClassName("msg"+i)[0].innerHTML = messages[msgNum-1-i].content;
 				document.getElementsByClassName("msg"+i)[1].innerHTML = messages[msgNum-1-i].content;
 				document.getElementById("img"+i).src = messages[msgNum-1-i].headimgurl;
 				document.getElementById("name"+i).innerHTML = messages[msgNum-1-i].nickname;
-				// document.getElementById("f"+i).addEventListener("webkitAnimationEnd", function() {
-				// 	document.getElementById("f"+i).className = "";
-				// }, false); 
 				update();
 			}
 		} 
@@ -73,7 +70,6 @@ socket.on("disconnect", function() {
 });
 socket.on("new message", function(obj) {
 	console.log(obj);
-	// changeMsg();
 	for (var i = 0; i < (msgNum - 1); i++) {
 		document.getElementsByClassName("msg"+i)[0].innerHTML = document.getElementsByClassName("msg"+(i+1))[0].innerHTML;
 		document.getElementsByClassName("msg"+i)[1].innerHTML = document.getElementsByClassName("msg"+(i+1))[1].innerHTML;
@@ -94,7 +90,6 @@ socket.on("admin", function(obj) {
 	document.getElementById("imga").src = "../../image/admin.png";
 	document.getElementById("namea").innerHTML = obj.nickname;
 	showAdmin();
-	// timeInt = setTimeout(stopAdmin(), 10000);
 });
 
 function update() {
@@ -108,20 +103,9 @@ function update() {
 			document.getElementById("float"+i).style.display = "none";
 		}
 	}
-	// document.getElementById("f"+(msgNum-1)).style.display = "none";
 	for (var i = 0; i < (msgNum - 0); i++) {
 		document.getElementById("f"+i).className = "c"+i;
 	}
-	// for (var i = 0; i < (msgNum - 1); i++) {
-	// 	document.getElementById("f"+i).style.transition = "top 3s";
-	// 	document.getElementById("f"+i).style.mozTransition = "top 3s";
-	// 	document.getElementById("f"+i).style.webkitTransition = "top 3s";
-	// 	document.getElementById("f"+i).style.oTransition = "top 3s";
-	// }
-	// for (var i = 0; i < (msgNum - 1); i++) {
-	// 	document.getElementById("f"+i).style.top = (1 + 15 * i) + "vh";
-	// }
-	// document.getElementById("f"+(msgNum-1)).style.display = "";
 }
 
 function updateAdmin() {
@@ -138,11 +122,9 @@ function updateAdmin() {
 function beginAdmin() {
 	document.getElementById("fa").style.display = "";
 	document.getElementById("f0").style.display = "none";
-	//setTimeout(stopAdmin(), 10000)
 }
 
 function showAdmin() {
-	
 	clearTimeout(timeInt);
 	console.log("B "+shift);
 	document.getElementById("fa").style.display = "";
