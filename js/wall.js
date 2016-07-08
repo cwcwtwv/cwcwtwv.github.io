@@ -14,7 +14,7 @@ init();
 
 function init() {
 	for (var i = 0; i < msgNum; i++) {
-		document.getElementById("img"+i).src = "https://cwcwtwv.github.io/image/image/loading.gif";
+		document.getElementById("img"+i).src = "https://cwcwtwv.github.io/image/loading.gif";
 	}
 }
 
