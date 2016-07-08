@@ -14,7 +14,7 @@ init();
 
 function init() {
 	for (var i = 0; i < msgNum; i++) {
-		document.getElementById("img"+i).src = "../../image/loading.gif";
+		document.getElementById("img"+i).src = "https://cwcwtwv.github.io/image/image/loading.gif";
 	}
 }
 
@@ -91,7 +91,7 @@ socket.on("admin", function(obj) {
 	console.log(obj);
 	document.getElementsByClassName("msga")[0].innerHTML = obj.content;
 	document.getElementsByClassName("msga")[1].innerHTML = obj.content;
-	document.getElementById("imga").src = "../../admin.png";
+	document.getElementById("imga").src = "https://cwcwtwv.github.io/image/admin.png";
 	document.getElementById("namea").innerHTML = obj.nickname;
 	showAdmin();
 	// timeInt = setTimeout(stopAdmin(), 10000);
