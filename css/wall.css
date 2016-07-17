@@ -1,0 +1,271 @@
+body {
+	background-color: black;
+	height: 100vh
+	padding: 1vh 1vw 1vh 1vw;
+	margin: 3vh 1vw 1vh 1vw;
+	text-align: center;
+}
+
+div {
+	display: block;
+}
+
+.notice {
+	background-color: #111;
+	color: white;
+	padding: 1vh 1vw 1vh 1vw;
+	border-radius: 15px;
+	font-size: 9vh;
+	overflow: hidden;
+	text-align: left;
+	white-space: nowrap;
+}
+
+#messages {
+
+	position: absolute;
+}
+
+.backblock {
+	background-color: #111;
+	color: white;
+	width: 96vw;
+	height: 78vh;
+	margin-top: 2vh;
+	padding: 1vh 1vw 1vh 1vw;
+	border-radius: 2%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+img {
+  width: 12vh;
+  height: 12vh;
+  border-radius: 17%;
+  float: left;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+#f0, #f1, #f2, #f3, #f4 {
+	display: block;
+	width: 100%;
+	height: 15vh;
+	text-align: center;
+	vertical-align: middle;
+	left: 2vw;
+	position: absolute;
+	transition: top 0s;
+	-moz-transition: top 0s; 
+	-webkit-transition: top 0s;
+	-o-transition: top 0s; 
+}
+
+.c0 {
+	top: 1vh;
+animation: myAni0 0.25s linear 0s;
+-moz-animation: myAni0 0.25s linear 0s;
+-webkit-animation: myAni0 0.25s linear 0s;
+-o-animation: myAni0 0.25s linear 0s;
+}
+
+.c1 {
+	top: 16vh;
+animation: myAni1 0.25s linear 0s;
+-moz-animation: myAni1 0.25s linear 0s;
+-webkit-animation: myAni1 0.25s linear 0s;
+-o-animation: myAni1 0.25s linear 0s;
+}
+
+.c2 {
+	top: 31vh;
+animation: myAni2 0.25s linear 0s;
+-moz-animation: myAni2 0.25s linear 0s;
+-webkit-animation: myAni2 0.25s linear 0s;
+-o-animation: myAni2 0.25s linear 0s;
+}
+
+.c3 {
+	top: 46vh;
+animation: myAni3 0.25s linear 0s;
+-moz-animation: myAni3 0.25s linear 0s;
+-webkit-animation: myAni3 0.25s linear 0s;
+-o-animation: myAni3 0.25s linear 0s;
+}
+
+.c4 {
+	top: 61vh;
+animation: myAni4 0.25s linear 0s;
+-moz-animation: myAni4 0.25s linear 0s;
+-webkit-animation: myAni4 0.25s linear 0s;
+-o-animation: myAni4 0.25s linear 0s;
+}
+
+#fa {
+	display: block;
+	width: 100%;
+	height: 15vh;
+	text-align: center;
+	vertical-align: middle;
+	top: 1vh;
+	left: 2vw;
+	position: absolute;
+	font: bold;
+	font-size: 150%;
+	color: yellow;
+}
+
+#contenta, #content0, #content1, #content2, #content3, #content4 {
+	height: 15vh;
+	width: 83vw;
+	vertical-align: middle;
+	overflow: hidden;
+	text-align: left;
+	white-space: nowrap;
+
+}
+
+#namea, #name0, #name1, #name2, #name3, #name4 {
+	height: 2.5vh;
+	width: 12vh;
+	float: left;
+	vertical-align: middle;
+	overflow: hidden;
+	text-align: left;
+	font-size: 2vh;
+}
+#namea {
+	display: none;
+}
+
+#fixeda, #fixed0, #fixed1, #fixed2, #fixed3, #fixed4 {
+	position: fixed;
+	vertical-align: middle;
+	padding-top: 4.5vh;
+	padding-left: 3vh;
+	font-size: 250%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: left;
+}
+
+#fixeda {
+	padding-top: 1.5vh;
+}
+
+#floata, #float0, #float1, #float2, #float3, #float4 {
+	position: fixed;
+	vertical-align: middle;
+	padding-top: 4.5vh;
+	padding-left: 3vh;
+	font-size: 250%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: left;
+}
+
+#floata {
+	padding-top: 1.5vh;
+}
+
+@keyframes myAni0 {
+	from {top: 16vh;}
+	to {top: 1vh;}
+}
+
+@-moz-keyframes myAni0 {
+	from {top: 16vh;}
+	to {top: 1vh;}
+}
+
+@-webkit-keyframes myAni0 {
+	from {top: 16vh;}
+	to {top: 1vh;}
+}
+
+@-o-keyframes myAni0 {
+	from {top: 16vh;}
+	to {top: 1vh;}
+}
+
+@keyframes myAni1 {
+	from {top: 31vh;}
+	to {top: 16vh;}
+}
+
+@-moz-keyframes myAni1 {
+	from {top: 31vh;}
+	to {top: 16vh;}
+}
+
+@-webkit-keyframes myAni1 {
+	from {top: 31vh;}
+	to {top: 16vh;}
+}
+
+@-o-keyframes myAni1 {
+	from {top: 31vh;}
+	to {top: 16vh;}
+}
+
+@keyframes myAni2 {
+	from {top: 46vh;}
+	to {top: 31vh;}
+}
+
+@-moz-keyframes myAni2 {
+	from {top: 46vh;}
+	to {top: 31vh;}
+}
+
+@-webkit-keyframes myAni2 {
+	from {top: 46vh;}
+	to {top: 31vh;}
+}
+
+@-o-keyframes myAni2 {
+	from {top: 46vh;}
+	to {top: 31vh;}
+}
+
+@keyframes myAni3 {
+	from {top: 61vh;}
+	to {top: 46vh;}
+}
+
+@-moz-keyframes myAni3 {
+	from {top: 61vh;}
+	to {top: 46vh;}
+}
+
+@-webkit-keyframes myAni3 {
+	from {top: 61vh;}
+	to {top: 46vh;}
+}
+
+@-o-keyframes myAni3 {
+	from {top: 61vh;}
+	to {top: 46vh;}
+}
+
+@keyframes myAni4 {
+	from {top: 76vh;}
+	to {top: 61vh;}
+}
+
+@-moz-keyframes myAni4 {
+	from {top: 76vh;}
+	to {top: 61vh;}
+}
+
+@-webkit-keyframes myAni4 {
+	from {top: 76vh;}
+	to {top: 61vh;}
+}
+
+@-o-keyframes myAni4 {
+	from {top: 76vh;}
+	to {top: 61vh;}
+}
+
+
